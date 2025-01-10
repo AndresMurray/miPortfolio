@@ -116,6 +116,7 @@
             outline: none;
             font-size: 18px;
             transition: background-color 0.3s;
+            margin-bottom: 5px;
         }
         .accordion:hover {
             background-color: #007bff;
@@ -225,4 +226,32 @@
                 </a>
                 <a class="contact-link" href="https://github.com/AndresMurray" target="_blank">
                     <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub">
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </section>
+    </div>
 
+    <footer>
+        <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Script para el acordeón
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
