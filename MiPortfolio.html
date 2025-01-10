@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+        }
+        .project {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Portafolio</h1>
+    </header>
+
+    <nav>
+        <a href="#sobre-mi">Sobre M&iacute;</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <section id="sobre-mi">
+            <h2 class="section-title">Sobre M&iacute;</h2>
+            <p>Hola, soy [Tu Nombre], un desarrollador web apasionado por crear soluciones innovadoras y funcionales. Me especializo en [tu especialidad] y disfruto trabajando en proyectos desafiantes que me permiten seguir aprendiendo y creciendo profesionalmente.</p>
+        </section>
+
+        <section id="proyectos">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="project">
+                <h3>Proyecto 1</h3>
+                <p>Descripci&oacute;n breve del proyecto. Puedes mencionar las tecnolog&iacute;as usadas y el prop&oacute;sito del proyecto.</p>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <p>Descripci&oacute;n breve del proyecto. Puedes mencionar las tecnolog&iacute;as usadas y el prop&oacute;sito del proyecto.</p>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2 class="section-title">Contacto</h2>
+            <p>Puedes contactarme a trav&eacute;s de mi correo electr&oacute;nico: <a href="mailto:tuemail@example.com">tuemail@example.com</a>.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
