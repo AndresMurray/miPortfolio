@@ -45,12 +45,24 @@
             border-bottom: 2px solid #007bff;
             display: inline-block;
         }
-        .project {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .technology {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .technology-item {
+            text-align: center;
+            width: 100px;
+        }
+        .technology-item img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        .technology-item span {
+            display: block;
+            font-size: 16px;
         }
         footer {
             background-color: #333;
@@ -79,25 +91,47 @@
 
     <nav>
         <a href="#sobre-mi">Sobre M&iacute;</a>
-        <a href="#proyectos">Proyectos</a>
+        <a href="#tecnologias">Tecnolog&iacute;as</a>
         <a href="#contacto">Contacto</a>
     </nav>
 
     <div class="container">
         <section id="sobre-mi">
             <h2 class="section-title">Sobre M&iacute;</h2>
-            <p>Hola, soy [Tu Nombre], un desarrollador web apasionado por crear soluciones innovadoras y funcionales. Me especializo en [tu especialidad] y disfruto trabajando en proyectos desafiantes que me permiten seguir aprendiendo y creciendo profesionalmente.</p>
+            <p>Hola, soy Andrés Murray, estudiante de tercer año de Analista Programador en la UNLP. Motivado por el desarrollo de software y la automatización de 
+                procesos, con sólida formación en análisis y programación. Me 
+                interesa participar en proyectos desafiantes que impulsen el 
+                crecimiento personal y profesional, con un enfoque en soluciones 
+                escalables y eficientes.</p>
         </section>
 
-        <section id="proyectos">
-            <h2 class="section-title">Proyectos</h2>
-            <div class="project">
-                <h3>Proyecto 1</h3>
-                <p>Descripci&oacute;n breve del proyecto. Puedes mencionar las tecnolog&iacute;as usadas y el prop&oacute;sito del proyecto.</p>
-            </div>
-            <div class="project">
-                <h3>Proyecto 2</h3>
-                <p>Descripci&oacute;n breve del proyecto. Puedes mencionar las tecnolog&iacute;as usadas y el prop&oacute;sito del proyecto.</p>
+        <section id="tecnologias">
+            <h2 class="section-title">Tecnolog&iacute;as</h2>
+            <div class="technology">
+                <div class="technology-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python">
+                    <span>Python</span>
+                </div>
+                <div class="technology-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png" alt="SQL">
+                    <span>SQL</span>
+                </div>
+                <div class="technology-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java">
+                    <span>Java</span>
+                </div>
+                <div class="technology-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3161/3161165.png" alt="Pascal">
+                    <span>Pascal</span>
+                </div>
+                <div class="technology-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+                    <span>GitHub</span>
+                </div>
+                <div class="technology-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/518/518713.png" alt="Linux">
+                    <span>Linux</span>
+                </div>
             </div>
         </section>
 
