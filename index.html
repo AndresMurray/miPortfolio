@@ -1,24 +1,151 @@
-<section id="contacto">
-    <h2 class="section-title">Contacto</h2>
-    <p>Puedes contactarme a través de:</p>
-    <div class="contact-links">
-        <a class="contact-link" href="mailto:andymurray99@hotmail.com">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
-            <span>Email</span>
-        </a>
-        <a class="contact-link" href="https://www.linkedin.com/in/andresmurray/" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-            <span>LinkedIn</span>
-        </a>
-        <a class="contact-link" href="https://github.com/AndresMurray" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub">
-            <span>GitHub</span>
-        </a>
-        <!-- Enlace al CV -->
-        <a class="contact-link" href="Andrés Murray Roppel CV.pdf" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/727/727401.png" alt="CV">
-            <span>CV</span>
-        </a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="computer.png">
+    <title>Mi Portfolio</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #eef2f3;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .project-toggle {
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .project-toggle:hover {
+            background-color: #0056b3;
+        }
+        .project-list {
+            display: none;
+            margin-top: 15px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .project-list li {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Portafolio</h1>
+    </header>
+
+    <nav>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <section id="sobre-mi">
+            <h2 class="section-title">Sobre Mí</h2>
+            <p>Hola, soy Andrés Murray, estudiante de tercer año de Analista Programador en la UNLP. Motivado por el desarrollo de software y la automatización de procesos, con sólida formación en análisis y programación. Me interesa participar en proyectos desafiantes que impulsen el crecimiento personal y profesional, con un enfoque en soluciones escalables y eficientes.</p>
+        </section>
+
+        <section id="tecnologias">
+            <h2 class="section-title">Tecnologías</h2>
+            <p>Python, Java, SQL, Linux</p>
+        </section>
+
+        <section id="proyectos">
+            <h2 class="section-title">Proyectos</h2>
+            <button class="project-toggle" onclick="toggleProjects()">Ver Proyectos</button>
+            <ul class="project-list">
+                <li>Automatización de Tareas: Usé Python para simplificar procesos repetitivos, incluyendo la gestión de archivos.</li>
+                <li>Análisis de Datos: Creé consultas SQL para procesar datos y generar reportes.</li>
+                <li>Automatización de Procesos en Linux (Bash): Creé scripts en Bash para automatizar tareas administrativas, como la limpieza de logs, la gestión de permisos de archivos y la generación de reportes del sistema.</li>
+                <li>Diseño de una Base de Datos Relacional (SQL): Modelé y normalicé bases de datos, asegurando consistencia e integridad referencial.</li>
+                <li>Diseño e Implementación de Soluciones Orientadas a Objetos: Diseñé e implementé soluciones orientadas a objetos. Además, realicé pruebas automatizadas con Junit.</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2 class="section-title">Contacto</h2>
+            <p>Puedes contactarme a través de:</p>
+            <p>Email: andymurray99@hotmail.com</p>
+        </section>
     </div>
-</section>
+
+    <footer>
+        <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleProjects() {
+            var projectList = document.querySelector('.project-list');
+            if (projectList.style.display === 'none' || projectList.style.display === '') {
+                projectList.style.display = 'block';
+            } else {
+                projectList.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
+
 
