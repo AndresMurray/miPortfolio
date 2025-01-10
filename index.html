@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon actualizado para la prueba -->
     <link rel="icon" type="image/png" sizes="32x32" href="computer.png">
-    <title>Mi Portfolio 🔥</title>
+    <title>Mi Portfolio </title>
     
     <style>
         body {
@@ -105,6 +105,26 @@
             width: 100%;
             box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
         }
+        .project-item {
+            background-color: #fff;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-item h3 {
+            color: #007bff;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .project-item p {
+            font-size: 16px;
+            color: #333;
+        }
+
         @media (max-width: 768px) {
             .container {
                 width: 95%;
@@ -124,6 +144,7 @@
     <nav>
         <a href="#sobre-mi">Sobre M&iacute;</a>
         <a href="#tecnologias">Tecnolog&iacute;as</a>
+        <a href="#proyectos">Proyectos</a>
         <a href="#contacto">Contacto</a>
     </nav>
 
@@ -156,6 +177,30 @@
                     <img src="https://cdn-icons-png.flaticon.com/512/518/518713.png" alt="Linux">
                     <span>Linux</span>
                 </div>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="project-item">
+                <h3>Automatización de Tareas</h3>
+                <p>Usé Python para simplificar procesos repetitivos, como la gestión de archivos y otras tareas administrativas.</p>
+            </div>
+            <div class="project-item">
+                <h3>Análisis de Datos</h3>
+                <p>Creé consultas SQL para procesar datos y generar reportes efectivos para la toma de decisiones.</p>
+            </div>
+            <div class="project-item">
+                <h3>Automatización de Procesos en Linux</h3>
+                <p>Desarrollé scripts en Bash para automatizar tareas en Linux, como la limpieza de logs y la gestión de permisos.</p>
+            </div>
+            <div class="project-item">
+                <h3>Diseño de Base de Datos Relacional</h3>
+                <p>Modelé y normalicé bases de datos, asegurando consistencia e integridad referencial mediante SQL.</p>
+            </div>
+            <div class="project-item">
+                <h3>Soluciones Orientadas a Objetos</h3>
+                <p>Diseñé e implementé soluciones orientadas a objetos, con pruebas automatizadas utilizando JUnit.</p>
             </div>
         </section>
 
