@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon actualizado para la prueba -->
     <link rel="icon" type="image/png" sizes="32x32" href="computer.png">
-    <title>Mi Portfolio </title>
+    <title>Mi Portfolio</title>
     
     <style>
         body {
@@ -105,26 +105,28 @@
             width: 100%;
             box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
         }
-        .project-item {
-            background-color: #fff;
-            border: 1px solid #007bff;
-            border-radius: 5px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .project-item h3 {
-            color: #007bff;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .project-item p {
-            font-size: 16px;
+        .accordion {
+            background-color: #f1f1f1;
             color: #333;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
         }
-
+        .accordion:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        .panel {
+            padding: 10px;
+            display: none;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
         @media (max-width: 768px) {
             .container {
                 width: 95%;
@@ -181,32 +183,37 @@
         </section>
 
         <section id="proyectos">
-            <h2 class="section-title">Proyectos Destacados</h2>
-            <div class="project-item">
-                <h3>Automatización de Tareas</h3>
-                <p>Usé Python para simplificar procesos repetitivos, como la gestión de archivos y otras tareas administrativas.</p>
+            <h2 class="section-title">Proyectos</h2>
+            <!-- Acordeón de Proyectos -->
+            <button class="accordion">Automatización de Tareas</button>
+            <div class="panel">
+                <p>Usé Python para simplificar procesos repetitivos, incluyendo la gestión de archivos.</p>
             </div>
-            <div class="project-item">
-                <h3>Análisis de Datos</h3>
-                <p>Creé consultas SQL para procesar datos y generar reportes efectivos para la toma de decisiones.</p>
+
+            <button class="accordion">Análisis de Datos</button>
+            <div class="panel">
+                <p>Creé consultas SQL para procesar datos y generar reportes.</p>
             </div>
-            <div class="project-item">
-                <h3>Automatización de Procesos en Linux</h3>
-                <p>Desarrollé scripts en Bash para automatizar tareas en Linux, como la limpieza de logs y la gestión de permisos.</p>
+
+            <button class="accordion">Automatización de Procesos en Linux</button>
+            <div class="panel">
+                <p>Creé scripts en Bash para automatizar tareas administrativas, como la limpieza de logs, la gestión de permisos de archivos y la generación de reportes del sistema.</p>
             </div>
-            <div class="project-item">
-                <h3>Diseño de Base de Datos Relacional</h3>
-                <p>Modelé y normalicé bases de datos, asegurando consistencia e integridad referencial mediante SQL.</p>
+
+            <button class="accordion">Diseño de una Base de Datos Relacional</button>
+            <div class="panel">
+                <p>Modele y normalicé bases de datos, asegurando consistencia e integridad referencial.</p>
             </div>
-            <div class="project-item">
-                <h3>Soluciones Orientadas a Objetos</h3>
-                <p>Diseñé e implementé soluciones orientadas a objetos, con pruebas automatizadas utilizando JUnit.</p>
+
+            <button class="accordion">Soluciones Orientadas a Objetos</button>
+            <div class="panel">
+                <p>Diseñé e implementé soluciones orientadas a objetos. Además, realicé pruebas automatizadas con JUnit.</p>
             </div>
         </section>
 
         <section id="contacto">
             <h2 class="section-title">Contacto</h2>
-            <p>Puedes contactarme a trav&eacute;s de:</p>
+            <p>Puedes contactarme a través de:</p>
             <div class="contact-links">
                 <a class="contact-link" href="mailto:andymurray99@hotmail.com">
                     <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
@@ -220,6 +227,11 @@
                     <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub">
                     <span>GitHub</span>
                 </a>
+                <!-- Enlace al CV -->
+                <a class="contact-link" href="Andrés Murray Roppel CV.pdf" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1006/1006657.png" alt="CV">
+                    <span>CV</span>
+                </a>
             </div>
         </section>
     </div>
@@ -227,8 +239,27 @@
     <footer>
         <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        // Script para el acordeón
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 </html>
+
 
 
 
