@@ -179,6 +179,14 @@
                     <img src="https://cdn-icons-png.flaticon.com/512/518/518713.png" alt="Linux">
                     <span>Linux</span>
                 </div>
+                <div class="technology-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt=".NET">
+                    <span>.NET</span>
+                </div>
+                <div class="technology-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="C#">
+                    <span>C#</span>
+                </div>
             </div>
         </section>
 
@@ -209,43 +217,48 @@
             <div class="panel">
                 <p>Diseñé e implementé soluciones orientadas a objetos. Además, realicé pruebas automatizadas con JUnit.</p>
             </div>
+
+            <button class="accordion">Aplicación de Escritorio con .NET, POO y SQL</button>
+            <div class="panel">
+                <p>Desarrollé una aplicación de escritorio utilizando **.NET** con **Programación Orientada a Objetos (POO)** para gestionar datos en una base de datos **SQL**. La aplicación permite realizar operaciones como agregar, editar y eliminar registros, con una interfaz gráfica amigable y una conexión eficiente a la base de datos.</p>
+                <p><strong>Tecnologías utilizadas:</strong> C#, .NET Framework, SQL Server, POO</p>
+                <p><strong>Objetivos:</strong></p>
+                <ul>
+                    <li>Implementar una estructura robusta y reutilizable utilizando POO.</li>
+                    <li>Desarrollar una conexión a base de datos SQL para almacenar y recuperar información.</li>
+                    <li>Crear una interfaz gráfica que permita una experiencia de usuario intuitiva.</li>
+                </ul>
+            </div>
         </section>
 
         <section id="contacto">
             <h2 class="section-title">Contacto</h2>
             <p>Puedes contactarme a través de:</p>
             <div class="contact-links">
-                <a class="contact-link" href="mailto:andymurray99@hotmail.com">
-                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
-                    <span>Email</span>
+                <a href="mailto:andres.murray@gmail.com" class="contact-link">
+                    <img src="https://img.icons8.com/ios/452/google-mail.png" alt="Gmail">
+                    <span>Correo</span>
                 </a>
-                <a class="contact-link" href="https://www.linkedin.com/in/andresmurray/" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/andres-murray" class="contact-link">
+                    <img src="https://img.icons8.com/ios/452/linkedin.png" alt="LinkedIn">
                     <span>LinkedIn</span>
                 </a>
-                <a class="contact-link" href="https://github.com/AndresMurray" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub">
+                <a href="https://github.com/andres-murray" class="contact-link">
+                    <img src="https://img.icons8.com/ios/452/github.png" alt="GitHub">
                     <span>GitHub</span>
-                </a>
-                <!-- Enlace al CV -->
-                <a class="contact-link" href="Andrés Murray Roppel CV.pdf" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1006/1006657.png" alt="CV">
-                    <span>CV</span>
                 </a>
             </div>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Andrés Murray. Todos los derechos reservados.</p>
     </footer>
 
     <script>
-        // Script para el acordeón
+        // Script para manejar acordeón de proyectos
         var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
+        for (var i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
                 this.classList.toggle("active");
                 var panel = this.nextElementSibling;
@@ -259,6 +272,7 @@
     </script>
 </body>
 </html>
+
 
 
 
