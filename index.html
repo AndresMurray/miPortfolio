@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de Andrés Murray, Analista Programador e investigador en IA generativa. Experiencia en desarrollo fullstack, sistemas RAG, LLMs, testing y validación de soluciones de software.">
     <!-- Favicon actualizado para la prueba -->
     <link rel="icon" type="image/png" sizes="32x32" href="computer.png">
     <!-- Bootstrap CSS -->
@@ -219,6 +221,61 @@
             border-radius: 20px;
         }
 
+        /* Experiencia de investigación */
+        .experience-card {
+            background: #fff;
+            border: 1px solid #dce9f5;
+            border-left: 5px solid #007bff;
+            border-radius: 12px;
+            padding: 22px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .experience-title {
+            margin: 0 0 6px 0;
+            color: #0056b3;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .experience-meta {
+            margin: 0 0 10px 0;
+            font-size: 15px;
+            color: #2f3a45;
+            font-weight: 600;
+        }
+
+        .experience-guides {
+            margin: 0 0 14px 0;
+            color: #3f4c59;
+            font-size: 15px;
+        }
+
+        .experience-list {
+            margin: 0;
+            padding-left: 20px;
+            line-height: 1.7;
+            color: #2f2f2f;
+        }
+
+        .keyword-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .keyword-chip {
+            background: #edf5ff;
+            border: 1px solid #cfe3ff;
+            color: #004f9e;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 999px;
+            letter-spacing: 0.2px;
+        }
+
         @media (max-width: 768px) {
             .container {
                 width: 95%;
@@ -235,12 +292,14 @@
 <body>
     <header>
         <h1>Bienvenido a Mi Portafolio</h1>
+        <p style="margin: 8px 0 0 0; font-size: 17px;">Analista Programador Universitario | Investigación en IA Generativa (RAG)</p>
     </header>
 
     <nav>
         <a href="#sobre-mi">Sobre M&iacute;</a>
-        <a href="#tecnologias">Tecnolog&iacute;as</a>
         <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#tecnologias">Tecnolog&iacute;as</a>
         <a href="#contacto">Contacto</a>
     </nav>
 
@@ -249,10 +308,120 @@
             <h2 class="section-title">Sobre M&iacute;</h2>
             <p>Hola, soy Andrés Murray, recibido de Analista Programador Universitario y estudiante de la Licenciatura
                 en Sistemas en la UNLP. Motivado por el desarrollo de software y la automatización de
-                procesos, con sólida formación en análisis y programación. Me
+                procesos, con sólida formación en análisis y programación. Actualmente participo en un proyecto de
+                investigación en IA generativa aplicado a sistemas RAG, trabajando en requerimientos, selección de
+                LLMs, chunking y estrategias de testing. Me
                 interesa participar en proyectos desafiantes que impulsen el
                 crecimiento personal y profesional, con un enfoque en soluciones
                 escalables y eficientes.</p>
+        </section>
+
+        <section id="proyectos">
+            <h2 class="section-title">Proyectos Destacados</h2>
+
+            <!-- OdonLoop: Proyecto Profesional Destacado -->
+            <div class="featured-project">
+                <span class="featured-badge">&#x2605; Proyecto en Producción</span>
+                <h3>OdonLoop &ndash; Sistema de Gestión Odontológica</h3>
+                <a class="project-link" href="https://odonloop.com" target="_blank">&#127760; odonloop.com</a>
+                <p>
+                    Sistema web para la <strong>gestión integral de turnos y pacientes odontológicos</strong>.
+                    Implementa un portal diferenciado por roles (paciente / odontólogo), un
+                    <strong>odontograma interactivo</strong> basado en notación FDI, seguimiento clínico
+                    con imágenes, <strong>exportación de historial en PDF</strong> y notificaciones por email.
+                    Aplicación desplegada y funcionando en producción.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Django</span>
+                    <span class="project-tag">React</span>
+                    <span class="project-tag">PostgreSQL</span>
+                    <span class="project-tag">Railway</span>
+                    <span class="project-tag">Vercel</span>
+                    <span class="project-tag">Cloudinary</span>
+                    <span class="project-tag">Brevo</span>
+                    <span class="project-tag">REST API</span>
+                    <span class="project-tag">PDF Export</span>
+                </div>
+            </div>
+
+            <!-- Acordeón de Proyectos -->
+            <button class="accordion">Aplicaciones Web Fullstack</button>
+            <div class="panel">
+                <p>Desarrollo de aplicaciones web fullstack para la <strong>gestión de alquileres temporarios, clínicas
+                        de fertilidad y sitios históricos</strong>. Implementación de sistemas completos incluyendo
+                    administración de propiedades, reservas, panel de control para usuarios y gestión de contenidos.
+                    Diseño responsive y experiencia de usuario optimizada.</p>
+            </div>
+
+            <button class="accordion">Arquitecturas Backend con Python y Frontends Desacoplados</button>
+            <div class="panel">
+                <p>Implementación de arquitecturas backend con <strong>Python (Flask, Django)</strong> y frontends
+                    desacoplados con <strong>React y Vue.js</strong>. Desarrollo de APIs RESTful, autenticación de
+                    usuarios, gestión de sesiones y comunicación eficiente entre capas. Separación clara de
+                    responsabilidades y arquitectura escalable.</p>
+            </div>
+
+            <button class="accordion">Diseño e Implementación de Bases de Datos Relacionales</button>
+            <div class="panel">
+                <p>Diseño e implementación de bases de datos relacionales, <strong>modelado de entidades, normalización
+                        y consultas SQL optimizadas</strong>. Definición de estructuras de tablas, claves
+                    primarias/foráneas, índices y procedimientos almacenados. Experiencia con MySQL, PostgreSQL y
+                    SQLite.</p>
+            </div>
+
+            <button class="accordion">Automatización de Procesos y Análisis de Datos</button>
+            <div class="panel">
+                <p>Automatización de procesos administrativos y análisis de datos mediante <strong>Python, Pandas y
+                        Power BI</strong>, optimizando tiempos y reduciendo errores. Desarrollo de scripts para
+                    extracción, limpieza y transformación de datos (ETL). Generación de reportes automatizados,
+                    dashboards interactivos, visualización de métricas y análisis estadísticos.</p>
+            </div>
+
+            <button class="accordion">Aplicación de Programación Orientada a Objetos</button>
+            <div class="panel">
+                <p>Aplicación de programación orientada a objetos, <strong>principios SOLID y patrones de
+                        diseño</strong> (Adapter, Builder, Strategy, Composite, Factory, Observer, entre otros) para el
+                    desarrollo de <strong>soluciones escalables y mantenibles</strong>. Implementación de buenas
+                    prácticas de código limpio y arquitectura de software.</p>
+            </div>
+
+            <button class="accordion">Aplicaciones de Escritorio con C#/.NET</button>
+            <div class="panel">
+                <p>Desarrollo de aplicaciones de escritorio orientadas a la gestión, utilizando <strong>C#/.NET con
+                        conexión a bases de datos</strong>. Implementación de interfaces gráficas (WinForms/WPF),
+                    gestión de catálogo de productos, operaciones CRUD y manejo de eventos. Integración con SQL Server y
+                    SQLite.</p>
+            </div>
+        </section>
+
+        <section id="experiencia">
+            <h2 class="section-title">Experiencia de Investigaci&oacute;n</h2>
+
+            <article class="experience-card">
+                <h3 class="experience-title">LIFIA - Universidad Nacional de La Plata</h3>
+                <p class="experience-meta">Integrante de equipo de investigaci&oacute;n | Proyecto IDI | Marzo 2026 - Actualidad</p>
+                <p class="experience-guides"><strong>Docentes gu&iacute;a:</strong> Joaqu&iacute;n Bogado, Alejandra Garrido, Claudia Pons</p>
+
+                <ul class="experience-list">
+                    <li>Participaci&oacute;n en el proyecto <strong>"Construcci&oacute;n de RAG: Aspectos de Ingenier&iacute;a de Software en proyectos con IA Generativa"</strong>.</li>
+                    <li>An&aacute;lisis del ciclo de desarrollo de sistemas <strong>RAG (Retrieval Augmented Generation)</strong> desde una perspectiva de ingenier&iacute;a de software.</li>
+                    <li>Trabajo en <strong>elicitaci&oacute;n de requerimientos</strong> para aplicaciones con IA generativa y criterios de calidad.</li>
+                    <li>Evaluaci&oacute;n y selecci&oacute;n de <strong>modelos de lenguaje (LLMs)</strong> seg&uacute;n objetivos funcionales y restricciones t&eacute;cnicas.</li>
+                    <li>Dise&ntilde;o de estrategias de <strong>chunking</strong> y estructuraci&oacute;n de entradas para mejorar recuperaci&oacute;n de contexto.</li>
+                    <li>Definici&oacute;n de pr&aacute;cticas de <strong>testing y validaci&oacute;n de respuestas abiertas</strong> para robustez y confiabilidad.</li>
+                </ul>
+
+                <div class="keyword-chips" aria-label="Palabras clave ATS de experiencia">
+                    <span class="keyword-chip">Investigaci&oacute;n aplicada</span>
+                    <span class="keyword-chip">IA Generativa</span>
+                    <span class="keyword-chip">RAG</span>
+                    <span class="keyword-chip">LLMs</span>
+                    <span class="keyword-chip">Ingenier&iacute;a de Software</span>
+                    <span class="keyword-chip">Elicitaci&oacute;n de Requerimientos</span>
+                    <span class="keyword-chip">Testing</span>
+                    <span class="keyword-chip">Validaci&oacute;n de Respuestas</span>
+                </div>
+            </article>
         </section>
 
         <section id="tecnologias">
@@ -351,84 +520,6 @@
                         <span>Power BI</span>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="proyectos">
-            <h2 class="section-title">Proyectos Destacados</h2>
-
-            <!-- OdonLoop: Proyecto Profesional Destacado -->
-            <div class="featured-project">
-                <span class="featured-badge">&#x2605; Proyecto en Producción</span>
-                <h3>OdonLoop &ndash; Sistema de Gestión Odontológica</h3>
-                <a class="project-link" href="https://odonloop.com" target="_blank">&#127760; odonloop.com</a>
-                <p>
-                    Sistema web para la <strong>gestión integral de turnos y pacientes odontológicos</strong>.
-                    Implementa un portal diferenciado por roles (paciente / odontólogo), un
-                    <strong>odontograma interactivo</strong> basado en notación FDI, seguimiento clínico
-                    con imágenes, <strong>exportación de historial en PDF</strong> y notificaciones por email.
-                    Aplicación desplegada y funcionando en producción.
-                </p>
-                <div class="project-tags">
-                    <span class="project-tag">Django</span>
-                    <span class="project-tag">React</span>
-                    <span class="project-tag">PostgreSQL</span>
-                    <span class="project-tag">Railway</span>
-                    <span class="project-tag">Vercel</span>
-                    <span class="project-tag">Cloudinary</span>
-                    <span class="project-tag">Brevo</span>
-                    <span class="project-tag">REST API</span>
-                    <span class="project-tag">PDF Export</span>
-                </div>
-            </div>
-
-            <!-- Acordeón de Proyectos -->
-            <button class="accordion">Aplicaciones Web Fullstack</button>
-            <div class="panel">
-                <p>Desarrollo de aplicaciones web fullstack para la <strong>gestión de alquileres temporarios, clínicas
-                        de fertilidad y sitios históricos</strong>. Implementación de sistemas completos incluyendo
-                    administración de propiedades, reservas, panel de control para usuarios y gestión de contenidos.
-                    Diseño responsive y experiencia de usuario optimizada.</p>
-            </div>
-
-            <button class="accordion">Arquitecturas Backend con Python y Frontends Desacoplados</button>
-            <div class="panel">
-                <p>Implementación de arquitecturas backend con <strong>Python (Flask, Django)</strong> y frontends
-                    desacoplados con <strong>React y Vue.js</strong>. Desarrollo de APIs RESTful, autenticación de
-                    usuarios, gestión de sesiones y comunicación eficiente entre capas. Separación clara de
-                    responsabilidades y arquitectura escalable.</p>
-            </div>
-
-            <button class="accordion">Diseño e Implementación de Bases de Datos Relacionales</button>
-            <div class="panel">
-                <p>Diseño e implementación de bases de datos relacionales, <strong>modelado de entidades, normalización
-                        y consultas SQL optimizadas</strong>. Definición de estructuras de tablas, claves
-                    primarias/foráneas, índices y procedimientos almacenados. Experiencia con MySQL, PostgreSQL y
-                    SQLite.</p>
-            </div>
-
-            <button class="accordion">Automatización de Procesos y Análisis de Datos</button>
-            <div class="panel">
-                <p>Automatización de procesos administrativos y análisis de datos mediante <strong>Python, Pandas y
-                        Power BI</strong>, optimizando tiempos y reduciendo errores. Desarrollo de scripts para
-                    extracción, limpieza y transformación de datos (ETL). Generación de reportes automatizados,
-                    dashboards interactivos, visualización de métricas y análisis estadísticos.</p>
-            </div>
-
-            <button class="accordion">Aplicación de Programación Orientada a Objetos</button>
-            <div class="panel">
-                <p>Aplicación de programación orientada a objetos, <strong>principios SOLID y patrones de
-                        diseño</strong> (Adapter, Builder, Strategy, Composite, Factory, Observer, entre otros) para el
-                    desarrollo de <strong>soluciones escalables y mantenibles</strong>. Implementación de buenas
-                    prácticas de código limpio y arquitectura de software.</p>
-            </div>
-
-            <button class="accordion">Aplicaciones de Escritorio con C#/.NET</button>
-            <div class="panel">
-                <p>Desarrollo de aplicaciones de escritorio orientadas a la gestión, utilizando <strong>C#/.NET con
-                        conexión a bases de datos</strong>. Implementación de interfaces gráficas (WinForms/WPF),
-                    gestión de catálogo de productos, operaciones CRUD y manejo de eventos. Integración con SQL Server y
-                    SQLite.</p>
             </div>
         </section>
 
