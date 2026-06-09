@@ -23,7 +23,7 @@
     <header id="inicio">
         <div class="badge-intro">Disponible para nuevos proyectos</div>
         <h1>Andrés Murray Roppel</h1>
-        <p>Analista Programador Universitario | Integrante de Investigación en IA Generativa (RAG) | Desarrollador Full Stack &amp; Analista Funcional</p>
+        <p>Full Stack Developer &amp; Analista Funcional | Integrante de Investigación en IA (LIFIA - UNLP)</p>
     </header>
 
     <!-- Barra de Navegación Flotante Glassmorphism -->
@@ -31,6 +31,7 @@
         <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
         <a href="#proyectos" class="nav-link">Proyectos</a>
         <a href="#experiencia" class="nav-link">Experiencia</a>
+        <a href="#educacion" class="nav-link">Educación</a>
         <a href="#tecnologias" class="nav-link">Tecnologías</a>
         <a href="#contacto" class="nav-link">Contacto</a>
     </nav>
@@ -50,74 +51,90 @@
 
         <!-- Sección Proyectos -->
         <section id="proyectos">
-            <h2 class="section-title">Proyectos Destacados</h2>
+            <h2 class="section-title">Proyectos Académicos</h2>
 
             <div class="projects-grid">
                 
-                <!-- PROYECTO 1: Centra (NUEVO) -->
-                <article class="project-card featured" id="proyecto-centra">
+                <!-- PROYECTO 1: Inmobiliaria -->
+                <article class="project-card">
                     <div>
-                        <span class="badge-featured">★ Proyecto Activo</span>
-                        <h3>Centra &ndash; Gestión de Cursos para Kinesiología</h3>
-                        <div class="project-date">Abril 2026 &ndash; Actualidad (Freelance)</div>
-                        <a class="project-link" href="https://centracursos.com" target="_blank" id="link-centra">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                            centracursos.com
-                        </a>
+                        <h3>Sistema de Gestión Inmobiliaria</h3>
+                        <div class="project-date">1er Semestre 2025 &ndash; UNLP</div>
                         <p>
-                            Sistema web integral para un centro de kinesiología que permite la gestión completa de cursos y alumnos, incluyendo un panel de administración robusto y una landing page editable orientada a clientes.
+                            Administración de usuarios, reservas y propiedades con CRUD, filtros avanzados, paginación e integración de pasarela de pagos.
                         </p>
-                        <ul class="project-list-items">
-                            <li>Módulo de cursos con alta, edición, habilitación/inhabilitación y gestión de clases por curso.</li>
-                            <li>Flujo completo de alta y gestión de usuarios (alumnos) con control de acceso basado en roles.</li>
-                            <li>Integración de notificaciones automáticas por email (inscripciones, recordatorios) mediante Brevo.</li>
-                            <li>Panel de administración completo y home público editable tipo landing page autogestionado.</li>
-                            <li>Almacenamiento de archivos y PDFs del curso en Cloudinary y videos mediante enlaces externos.</li>
-                            <li>Integración con links de pago de Mercado Pago asociados a cada curso, facilitando la compra directa.</li>
-                        </ul>
                     </div>
                     <div class="project-tags">
-                        <span class="project-tag">Next.js</span>
                         <span class="project-tag">Python</span>
-                        <span class="project-tag">FastAPI</span>
-                        <span class="project-tag">Supabase</span>
-                        <span class="project-tag">Render</span>
-                        <span class="project-tag">Vercel</span>
-                        <span class="project-tag">Cloudinary</span>
-                        <span class="project-tag">Brevo</span>
-                        <span class="project-tag">Mercado Pago</span>
+                        <span class="project-tag">Flask</span>
+                        <span class="project-tag">SQLite</span>
+                        <span class="project-tag">Bootstrap</span>
                     </div>
                 </article>
 
-                <!-- PROYECTO 2: OdonLoop -->
-                <article class="project-card featured" id="proyecto-odonloop">
+                <!-- PROYECTO 2: Clínica de fertilidad -->
+                <article class="project-card">
                     <div>
-                        <span class="badge-featured">★ En Producción</span>
-                        <h3>OdonLoop &ndash; Sistema de Gestión Odontológica</h3>
-                        <div class="project-date">Proyecto Profesional</div>
-                        <a class="project-link" href="https://odonloop.com" target="_blank" id="link-odonloop">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                            odonloop.com
-                        </a>
+                        <h3>Sistema para Clínica de Fertilidad</h3>
+                        <div class="project-date">2do Semestre 2025 &ndash; UNLP</div>
                         <p>
-                            Sistema web para la gestión integral de turnos y pacientes odontológicos. Implementa un portal diferenciado por roles (paciente / odontólogo), un odontograma interactivo basado en notación FDI, seguimiento clínico con imágenes y exportación de historial clínico a formato PDF.
+                            Gestión integral de turnos, médicos, pacientes, historias clínicas y consumo de APIs externas de terminología médica.
                         </p>
-                        <ul class="project-list-items">
-                            <li>Portal web con control de acceso y flujos diferenciados para pacientes y odontólogos.</li>
-                            <li>Odontograma interactivo digital interactivo basado en la notación internacional FDI.</li>
-                            <li>Notificaciones automatizadas de turnos y confirmaciones de citas por correo electrónico.</li>
-                            <li>Gestión y carga multimedia de estudios e imágenes clínicas almacenados de forma segura.</li>
-                        </ul>
                     </div>
                     <div class="project-tags">
+                        <span class="project-tag">Python</span>
                         <span class="project-tag">Django</span>
-                        <span class="project-tag">React</span>
                         <span class="project-tag">PostgreSQL</span>
-                        <span class="project-tag">Railway</span>
-                        <span class="project-tag">Vercel</span>
-                        <span class="project-tag">Cloudinary</span>
-                        <span class="project-tag">Brevo</span>
-                        <span class="project-tag">REST API</span>
+                        <span class="project-tag">React.js</span>
+                    </div>
+                </article>
+
+                <!-- PROYECTO 3: Sitios históricos -->
+                <article class="project-card">
+                    <div>
+                        <h3>Gestión de Sitios Históricos</h3>
+                        <div class="project-date">2do Semestre 2025 &ndash; UNLP</div>
+                        <p>
+                            Portal público y panel administrativo con control de acceso, gestión de contenidos, reseñas y carga multimedia de imágenes.
+                        </p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Flask</span>
+                        <span class="project-tag">PostgreSQL</span>
+                        <span class="project-tag">Vue.js</span>
+                    </div>
+                </article>
+
+                <!-- PROYECTO 4: Catálogo de productos -->
+                <article class="project-card">
+                    <div>
+                        <h3>Catálogo de Productos</h3>
+                        <div class="project-date">1er Semestre 2025 &ndash; Curso C#</div>
+                        <p>
+                            Aplicación de escritorio interactiva para la administración de catálogos comerciales con operaciones CRUD y persistencia de datos.
+                        </p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">C#</span>
+                        <span class="project-tag">.NET Framework</span>
+                        <span class="project-tag">SQLite</span>
+                    </div>
+                </article>
+
+                <!-- PROYECTO 5: Trivia interactivo -->
+                <article class="project-card">
+                    <div>
+                        <h3>Trivia con Datasets Reales</h3>
+                        <div class="project-date">1er Semestre 2024 &ndash; UNLP</div>
+                        <p>
+                            Juego educativo basado en análisis de datos reales, estadísticas dinámicas y algoritmos para el seguimiento y evaluación del desempeño.
+                        </p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Pandas</span>
+                        <span class="project-tag">JSON</span>
                     </div>
                 </article>
 
@@ -177,18 +194,86 @@
             </div>
         </section>
 
-        <!-- Sección Experiencia de Investigación -->
+        <!-- Sección Experiencia -->
         <section id="experiencia">
-            <h2 class="section-title">Experiencia de Investigación</h2>
+            <h2 class="section-title">Experiencia</h2>
             
             <div class="glass-panel">
                 <div class="experience-timeline">
+                    <!-- Experiencia 1: BioYoga Consciente -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-title">BioYoga Consciente</h3>
+                                <div class="experience-role">Desarrollador Full Stack Freelance</div>
+                            </div>
+                            <span class="experience-meta">Mayo 2026 &ndash; Actualidad</span>
+                        </div>
+                        
+                        <div class="experience-guides">
+                            <strong>Sitio web:</strong> <a href="https://bioyogaconsciente.com" target="_blank">bioyogaconsciente.com</a>
+                        </div>
+                        
+                        <ul class="experience-list">
+                            <li>Adapté la plataforma <strong>Centra</strong> para un nuevo cliente del sector bienestar, personalizando la identidad visual y ajustando flujos según sus requerimientos.</li>
+                            <li>Gestioné el deploy completo en producción y la configuración del entorno.</li>
+                            <li>Adapté notificaciones automáticas para el dominio.</li>
+                        </ul>
+                        
+                        <div class="keyword-chips" aria-label="Palabras clave ATS de experiencia">
+                            <span class="keyword-chip">Desarrollo Full Stack</span>
+                            <span class="keyword-chip">Plataforma Centra</span>
+                            <span class="keyword-chip">Despliegue (Deploy)</span>
+                            <span class="keyword-chip">Configuración de Entorno</span>
+                            <span class="keyword-chip">Notificaciones Automáticas</span>
+                            <span class="keyword-chip">Freelance</span>
+                        </div>
+                    </div>
+
+                    <!-- Experiencia 2: Centra -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-title">Centra &ndash; Gestión de Cursos para Kinesiología</h3>
+                                <div class="experience-role">Desarrollador Full Stack &amp; Analista Funcional Freelance</div>
+                            </div>
+                            <span class="experience-meta">Abril 2026 &ndash; Actualidad</span>
+                        </div>
+                        
+                        <div class="experience-guides">
+                            <strong>Sitio web:</strong> <a href="https://centracursos.com" target="_blank">centracursos.com</a>
+                        </div>
+                        
+                        <ul class="experience-list">
+                            <li>Implementé el módulo de cursos con alta, edición, habilitación/inhabilitación y gestión de clases por curso.</li>
+                            <li>Diseñé el flujo completo de alta y gestión de usuarios (alumnos) con control de acceso basado en roles.</li>
+                            <li>Integré notificaciones automáticas por email (inscripciones, recordatorios) mediante Brevo.</li>
+                            <li>Desarrollé el panel de administración completo y la home pública editable (tipo landing page) autogestionada.</li>
+                            <li>Gestioné el almacenamiento seguro de imágenes y PDFs del curso en Cloudinary, y videos mediante enlaces externos.</li>
+                            <li>Incorporé soporte para links de pago de Mercado Pago asociados a cada curso, facilitando la compra directa.</li>
+                        </ul>
+                        
+                        <div class="keyword-chips" aria-label="Palabras clave ATS de experiencia">
+                            <span class="keyword-chip">Next.js</span>
+                            <span class="keyword-chip">FastAPI</span>
+                            <span class="keyword-chip">Python</span>
+                            <span class="keyword-chip">Supabase</span>
+                            <span class="keyword-chip">Mercado Pago</span>
+                            <span class="keyword-chip">Brevo</span>
+                            <span class="keyword-chip">Cloudinary</span>
+                            <span class="keyword-chip">Render</span>
+                        </div>
+                    </div>
+
+                    <!-- Experiencia 3: LIFIA -->
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="experience-header">
                             <div>
                                 <h3 class="experience-title">LIFIA - Universidad Nacional de La Plata</h3>
-                                <div class="experience-role"> Proyecto IDI </div>
+                                <div class="experience-role">Integrante de Equipo de Investigación</div>
                             </div>
                             <span class="experience-meta">Marzo 2026 &ndash; Actualidad</span>
                         </div>
@@ -215,7 +300,109 @@
                             <span class="keyword-chip">Testing &amp; Validación</span>
                         </div>
                     </div>
+
+                    <!-- Experiencia 4: OdonLoop -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-title">OdonLoop &ndash; Sistema de Gestión Odontológica</h3>
+                                <div class="experience-role">Desarrollador Full Stack &amp; Analista Funcional (Proyecto Propio)</div>
+                            </div>
+                            <span class="experience-meta">Diciembre 2025 &ndash; Actualidad</span>
+                        </div>
+                        
+                        <div class="experience-guides">
+                            <strong>Sitio web:</strong> <a href="https://odonloop.com" target="_blank">odonloop.com</a>
+                        </div>
+                        
+                        <ul class="experience-list">
+                            <li>Diseñé y desarrollé el sistema completo: arquitectura, base de datos relacional, backend y frontend.</li>
+                            <li>Realicé la elicitación y relevamiento de requisitos, y el diseño funcional del sistema.</li>
+                            <li>Implementé un portal multi-rol (paciente / odontólogo) con control de acceso y flujos diferenciados.</li>
+                            <li>Desarrollé un odontograma interactivo digital basado en la notación internacional FDI con seguimiento clínico mediante imágenes.</li>
+                            <li>Integré exportación automatizada de historial clínico al formato PDF.</li>
+                            <li>Desarrollé la gestión de turnos con notificaciones y confirmaciones automáticas por email vía Brevo.</li>
+                        </ul>
+                        
+                        <div class="keyword-chips" aria-label="Palabras clave ATS de experiencia">
+                            <span class="keyword-chip">Django</span>
+                            <span class="keyword-chip">React.js</span>
+                            <span class="keyword-chip">PostgreSQL</span>
+                            <span class="keyword-chip">Odontograma FDI</span>
+                            <span class="keyword-chip">APIs REST</span>
+                            <span class="keyword-chip">Railway</span>
+                            <span class="keyword-chip">Vercel</span>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Sección Educación y Certificaciones -->
+        <section id="educacion">
+            <h2 class="section-title">Educación &amp; Certificaciones</h2>
+            
+            <div class="edu-cert-grid">
+                
+                <!-- Columna Educación -->
+                <div class="glass-panel">
+                    <h3 class="experience-title" style="margin-bottom: 25px; display: flex; align-items: center; gap: 10px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-blue);"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+                        Educación Académica
+                    </h3>
+                    
+                    <!-- Educación 1: Licenciatura -->
+                    <div class="edu-item">
+                        <div class="edu-title">Licenciatura en Sistemas</div>
+                        <div class="edu-subtitle">Universidad Nacional de La Plata (UNLP)</div>
+                        <div class="edu-meta">2023 &ndash; Presente | La Plata, Argentina</div>
+                    </div>
+                    
+                    <!-- Educación 2: APU -->
+                    <div class="edu-item">
+                        <div class="edu-title">Analista Programador Universitario</div>
+                        <div class="edu-subtitle">Universidad Nacional de La Plata (UNLP)</div>
+                        <div class="edu-meta">2023 &ndash; 2025 | Graduado | La Plata, Argentina</div>
+                    </div>
+                </div>
+                
+                <!-- Columna Certificaciones -->
+                <div class="glass-panel">
+                    <h3 class="experience-title" style="margin-bottom: 25px; display: flex; align-items: center; gap: 10px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-purple);"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        Certificaciones &amp; Cursos
+                    </h3>
+                    
+                    <!-- Certificación 1: Claude Code -->
+                    <div class="cert-item">
+                        <div class="cert-title">Claude Code in Action</div>
+                        <div class="cert-subtitle">Anthropic</div>
+                        <div class="cert-meta">Marzo 2026</div>
+                    </div>
+                    
+                    <!-- Certificación 2: C# -->
+                    <div class="cert-item">
+                        <div class="cert-title">Programación C# Nivel 2 (POO + .NET + SQL)<span class="cert-hours">60 hs</span></div>
+                        <div class="cert-subtitle">Maxi Programa</div>
+                        <div class="cert-meta">Marzo 2025</div>
+                    </div>
+                    
+                    <!-- Certificación 3: Inglés -->
+                    <div class="cert-item">
+                        <div class="cert-title">Inglés B1+ (CEFR)<span class="cert-hours">59 hs</span></div>
+                        <div class="cert-subtitle">DynEd International &mdash; UTN Buenos Aires</div>
+                        <div class="cert-meta">Diciembre 2024</div>
+                    </div>
+                    
+                    <!-- Certificación 4: Reparación PC -->
+                    <div class="cert-item">
+                        <div class="cert-title">Curso Exprés "Repara tú PC"<span class="cert-hours">18 hs presenciales</span></div>
+                        <div class="cert-subtitle">EKOA &mdash; UNLP</div>
+                        <div class="cert-meta">Julio 2025</div>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
@@ -325,6 +512,14 @@
                         <div class="tech-item" id="tech-powerbi">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI">
                             <span>Power BI</span>
+                        </div>
+                        <div class="tech-item" id="tech-docker">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                            <span>Docker</span>
+                        </div>
+                        <div class="tech-item" id="tech-claudecode">
+                            <img src="https://cdn.simpleicons.org/anthropic/D1A073" alt="Claude Code">
+                            <span>Claude Code</span>
                         </div>
                     </div>
                 </div>
